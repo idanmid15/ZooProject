@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../public/javascripts/functions.js"></script>
+    <script type="text/javascript" src="../public/javascripts/profile.js"></script>
+</head>
+<body>
+<div id="workerDiv" class="loginForm">
+	<button id="back" onclick="redirectTo('protected/worker.html')"> Back </button>
+    <button id="logout" onclick="logOut()"> Logout </button>
+    <h1> Profile Page </h1>
+    <fieldset id='form'>   
+        <label>Change Departments:</label>
+        <select id="department"></select>
+        <button id="changeDepartmentBtn">Change Department</button>
+        <h4>Change Password:</h4>
+        <label>Old Password:</label>
+        <input type="password" id="oldPassword">
+        <label>New Password:</label>
+        <input type="password" id="newPassword">
+        <label>Repeat New Password:</label>
+        <input type="password" id="newRepeatPassword">
+        <button id="changePassBtn">Change Password</button>
+    </fieldset>
+</div>
+</body>
+</html>

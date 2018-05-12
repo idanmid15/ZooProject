@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Departments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../public/javascripts/departments.js"></script>
+	<script type="text/javascript" src="../public/javascripts/functions.js"></script>
+</head>
+<body>
+
+<div id="loginDiv" class="loginForm">
+	<button id="back" onclick="redirectTo('protected/worker.html')"> Back </button>
+	<button id="logout" onclick="logOut()"> Logout </button>
+	<h2 id='departmentType'></h2>
+	<div class="tableDIV" id="tableDIV">
+
+		<label>Select department to search in:</label>	
+		<select id="department"></select>
+		<label>Input search:</label>
+		<input type="text" id="searchItem">
+		<label>Type of search:</label>
+		<select id="searchType">
+			<option>by name</option>
+			<option>by attribute</option>
+		</select>
+		<button id="searchBtn">Search</button>
+		<button id="showBtn">Show All Animals</button>
+		<button id="addBtn">Add Animal</button>
+		
+		<label> Share Department </label>
+		<label>User search:</label>
+		<label id='lblNoUsersshare'> No available users outside of this department to share with </label>
+		<select id="selectUser">
+		</select>
+		<button id="unshareBtn">UnShare</button>
+		<button id="shareBtn">Share</button>
+		<button id="deleteBtn">Delete Department</button>
+</div>
+
+<table id="table" class="loginForm">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Species</th>
+			<th>Gender</th>
+		</tr>
+	</thead>
+</table>
+</body>
+</html>

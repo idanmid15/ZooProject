@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="javascripts/functions.js"></script>
+    <script type="text/javascript" src="javascripts/login.js"></script>
+</head>
+<body>
+
+<div id="loginDiv" class="loginForm">
+
+    <h1>Zoo Management Application</h1>
+
+    <fieldset id='form'>
+        <label><span class="required">*</span>ID:</label>
+        <input type="text" id="id" name="identification">
+
+        <label><span class="required">*</span>Password:</label>
+        <input type="password" id="password" name="user_password">
+
+    </fieldset>
+    <button id="loginBtn" class="openBtns">Login</button>
+    <button id="signupBtn" class="openBtns">Sign Up</button>
+</div>
+
+<div id="registerDiv" class="loginForm">
+
+    <h1> Registration </h1>
+
+    <fieldset id='form2'>
+        <label><span class="required">*</span>First Name:</label>
+        <input type="text" id="firstName">
+        <label><span class="required">*</span>Last Name:</label>
+        <input type="text" id="lastName">
+        <label><span class="required">*</span>ID:</label>
+        <input type="text" id="idRegistration">
+        <label><span class="required">*</span>Department:</label>
+        <select id="department"></select>
+        <label><span class="required">*</span>Password:</label>
+        <input type="password" id="passwordRegistration">
+        <label><span class="required">*</span>Repeat Password:</label>
+        <input type="password" id="passwordRepeat">
+        <input type="checkbox" id="managerBox" value="overwrite">Check if you are a manager
+
+    </fieldset>
+    <button id="registerBtn">Register</button>
+</div>
+
+</body>

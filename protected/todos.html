@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>To Do Lists</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../public/javascripts/functions.js"></script>
+    <script type="text/javascript" src="../public/javascripts/todos.js"></script>
+</head>
+<body>
+
+<div id="listsDiv" class="loginForm">
+    <button id="back" onclick="redirectTo('protected/worker.html')"> Back </button>
+    <button id="logout" onclick="logOut()"> Logout </button>
+    <h1>To Do Lists</h1>
+    <h4> Create To Do List</h4>
+
+        <label><span class="required">*</span>List name:</label>
+        <input type="text" id="listName">
+        <label>Background Color:</label>
+        <select id="backgroundColor">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+		
+		<button id="showListBtn"> Show List </button>
+        <button id="createListBtn">Create List</button>
+        <button id="editList"> Edit An Existing List  </button>
+        <table class="loginForm" id="table">
+            <thead>
+            <tr>
+                <th> TODO Chore </th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+</div>
+
+</body>
+
+</html>

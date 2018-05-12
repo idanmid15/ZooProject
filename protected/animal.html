@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Interface</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../public/javascripts/animal.js"></script>
+	<script type="text/javascript" src="../public/javascripts/functions.js"></script>
+</head>
+<body>
+<div id="loginDiv" class="loginForm">
+	<button id="back" onclick="redirectTo('protected/department.html')"> Back </button>
+	<button id="logout" onclick="logOut()"> Logout </button>
+	<h1>Animal interface</h1>
+	
+	<fieldset id='form'>
+		<label><span class="required">*</span>Name:</label>
+		<input type="text" id="name" maxlength="13">
+		
+		<label>Species:</label>
+		<input type="text" id="species" maxlength="13">
+		
+		<label>Gender:</label>
+		<select id="gender">
+			<option>male</option>
+			<option>female</option>
+		</select>
+		
+		<button id="addBtn">Add</button>			
+	</fieldset>
+</div>
+</body>
+</html>
